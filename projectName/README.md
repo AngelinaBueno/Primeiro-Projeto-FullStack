@@ -1,16 +1,60 @@
-# React + Vite
+# ✦ minhas tarefas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+um app de lista de tarefas com front-end e back-end se comunicando totalmente integrados
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✦ o que eu aprendi construindo isso
 
-## React Compiler
+* como funciona uma API REST (rotas GET e POST)
+* validação de dados com Pydantic
+* componentes React, `useState` e `useEffect`
+* comunicação entre front-end e back-end
+* como lidar com CORS
+* uso do operador spread (`...`) no React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✦ tecnologias
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React + Vite
+* FastAPI + Uvicorn
+* Python + Pydantic
+* CSS
+
+---
+
+## ✦ como rodar localmente
+
+### back-end
+
+```bash
+cd projectName
+pip install fastapi "uvicorn[standard]"
+uvicorn main:app --reload
+```
+
+### front-end (em outro terminal)
+
+```bash
+npm install
+npm run dev
+```
+
+acesse:
+
+* http://localhost:5173
+* http://localhost:8000/docs
+
+---
+
+## ✦ funcionalidades
+
+* listagem de tarefas consumindo a API
+* criação de novas tarefas
+* marcação de tarefas como concluídas
+* deleta tarefas
+
+---
+
+construído com curiosidade e muita tentativa e erro.
