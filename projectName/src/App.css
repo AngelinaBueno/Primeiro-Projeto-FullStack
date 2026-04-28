@@ -68,11 +68,35 @@ li {
 }
 
 li {
-  cursor: pointer;
   transition: opacity 0.2s;
+}
+
+li span {
+  cursor: pointer;
+  flex: 1;
 }
 
 li.feita {
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-deletar {
+  background: none;
+  border: none;
+  color: #3E2723;
+  font-size: 12px;
+  padding: 4px 8px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn-deletar:hover {
+  opacity: 1;
 }

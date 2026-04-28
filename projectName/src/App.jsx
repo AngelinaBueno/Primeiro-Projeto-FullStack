@@ -47,15 +47,24 @@ function App() {
         {tarefas.map(tarefa => (
           <li
             key={tarefa.id}
-            onClick={() => toggleTarefa(tarefa.id)}
             className={tarefa.feita ? 'feita' : ''}
           >
-            {tarefa.titulo}
+            <span onClick={() => toggleTarefa(tarefa.id)}>{tarefa.titulo}</span>
+            <button className="btn-deletar" onClick={() => deletarTarefa(tarefa.id)}>✕</button>
           </li>
         ))}
       </ul>
     </div>
   )
+
+  function deletarTarefa(id) {
+    fetch(`http://127.0.0.1:8000/tarefas/${id}`, {
+      method: 'DELETE'
+    }).then(() => {
+      setTarefas(tarefas.filter(t => t.id !== id))
+    })
+  }
+
 }
 
 export default App
