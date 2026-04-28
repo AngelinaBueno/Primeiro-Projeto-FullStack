@@ -1,3 +1,5 @@
+![preview do app](./projectName/preview.png)
+
 # ✦ minhas tarefas
 
 um app de lista de tarefas com front-end e back-end se comunicando totalmente integrados
